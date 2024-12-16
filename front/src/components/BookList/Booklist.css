@@ -1,0 +1,48 @@
+/* ==============고정 틀================== */
+/* Responsive adjustments */
+@media (max-width: 1920px) {
+  .content-wrapper {
+    padding-right: 10px;
+  }
+}
+
+.booklist_container {
+  min-height: 100vh;
+  padding: 180px 180px 0; /* Space for navbar and footer */
+  box-sizing: border-box;
+}
+
+.booklist_pagetitle {
+  font-size: 38px;
+  line-height: 63px;
+  margin: 0;
+  width: 264px;
+  height: 63px;
+  display: block;
+  font-family: var(--font-kr-bold);
+  font-weight: bold;
+}
+
+/* ==============책 리스트================ */
+
+/* 검색창 */
+.booklist_search {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+/* 책 정렬 */
+.booklist_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 0;
+}
+
+.no_book_message {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  font-size: 24px;
+}

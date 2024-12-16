@@ -1,0 +1,68 @@
+.page_header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page_title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.page_description {
+  color: #777777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.page_navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+}
+
+.page_step_title {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+.required_text {
+  color: #777777;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.right_side {
+  color: #333;
+  font-size: 14px;
+}
+
+.page_steps {
+  display: flex;
+  gap: 8px;
+}
+
+.step_text {
+  color: #666;
+  font-size: 14px;
+}
+
+.step_text.active_step {
+  font-weight: bold;
+  color: #333;
+}
+
+.page_divider {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 50px 0 15px 0;
+}

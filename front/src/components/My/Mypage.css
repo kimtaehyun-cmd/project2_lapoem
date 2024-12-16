@@ -1,0 +1,239 @@
+.mypage_container {
+  min-height: 100vh;
+  padding: 180px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my_page_top {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-black);
+}
+
+.my_page_title {
+  font-size: 38px;
+  line-height: 63px;
+  margin: 0;
+  font-family: var( --font-kr);
+  font-weight: bold;
+}
+
+.my_page_desc {
+  font-family: var( --font-kr);
+  font-size: var(--font-small);
+  color: var( --text-gray-dark);
+  margin-top: 10px;
+  justify-content: left;
+  margin-left: 10px; /* 타이틀과 간격을 조정 */
+  /* vertical-align: middle; */
+}
+
+.my_page_content {
+  font-family: var( --font-kr);
+  width: 100%;
+  max-width: 700px;
+  border-top: 1px solid var(--text-gray-light);
+  margin-top: 10px;
+  padding-top: 30px;
+}
+
+.my_page_content_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: var(--text-black);
+}
+
+.my_page_content_info > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.my_page_content_info label {
+  flex: 1;
+  font-size: var(--font-normal1);
+  font-weight: 400;
+  color: var(--text-black);
+}
+
+.my_page_content_info input[type="text"],
+.my_page_content_info input[type="email"],
+.my_page_content_info input[type="date"] 
+.my_page_content_info input[type="checkbox"]
+{
+  flex: 2;
+  padding: 13px;
+  border: 1px solid var( --text-gray-light);
+  border-radius: 7px;
+  font-size: var( --font-small);
+  color: var(--text-black);
+}
+
+
+.marketing-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 550px;
+  /* margin-top: 20px; */
+}
+
+#marketingConsent {
+  cursor: pointer;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+
+
+.my_page_content_info input[disabled] {
+  background-color: var(--text-gray-bg);
+}
+
+
+
+.my_page_button {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between; /* 버튼 정렬 설정 */
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--text-gray-light);
+}
+
+.my_page_button button {
+  padding: 10px 20px;
+  font-size: var(--font-small);
+  font-weight: bold;
+  border-radius: 15px;
+  border: 1px solid var(--text-gray-medium);
+  margin-left: 10px; /* 버튼 간격 조정 */
+}
+
+#deleteBtn {
+  background-color: var(--text-red); /* 빨간색으로 설정 */
+  border: 1px solid var(--text-red);
+  color: #fff;
+}
+
+
+#cancelBtn {
+  background-color: #fff;
+  color: var(--text-black);
+}
+
+.my_privacy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align gender and birthdate in a single row */
+  margin-top: 40px; 
+}
+
+
+/* 성별 */
+.my_privacy .gender_toggle button {
+  /* background-color: var(--text-gray-light); */
+  border: 1px solid var(--text-gray-dark);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.my_privacy .gender_toggle .selected {
+  background-color: var(--text-point); 
+  color: white;
+  
+}
+
+
+.birthdate-display {
+  /* font-weight: var(--font-bold-weight); */
+  /* color: #D3756B; */
+  color: var(--text-gray-dark);
+  display: flex;
+}
+
+.birthdate-display img {
+  width: auto;
+  height: 30px; 
+  margin-right: 15px; 
+  margin-top: -2px;
+}
+
+.birthdate-display span {
+  font-size: var(--font-normal1);
+}
+
+/* ===========저장 또는 에러 메시지 스타일========== */
+
+.mypage_container .error-message {
+  color: var(--text-red);        
+  font-size: 18px;   
+  font-weight: bold;  
+  margin-top: 10px;   
+  text-align: center; 
+}
+
+
+.mypage_container .success-message {
+  color: var(--text-red);       
+  font-size: 18px;   
+  font-weight: bold; 
+  margin-top: 10px;   
+  text-align: center; 
+}
+
+
+/* ==============저장 버튼 활성/비 활성 처리 ==============*/
+
+.button-group-right #saveBtn {
+  background-color: #f0f0f0; 
+  color: #333; 
+  border: 1px solid #ccc; 
+  cursor: not-allowed; 
+  padding: 10px 20px;
+}
+
+.button-group-right #saveBtn:disabled {
+  cursor: not-allowed; /* Disable cursor on disabled button */
+  opacity: 0.5; /* Disable opacity when disabled */
+}
+
+.button-group-right #saveBtn.active {
+  background-color: var(--text-gray-dark); /* Green background when active */
+  color: white; /* White text when active */
+  cursor: pointer; /* Normal cursor when active */
+}
+
+.button-group-right #saveBtn.active:hover {
+  background-color: var(--text-point); /* Darker green on hover */
+}
+
+/* ==============취소 버튼 활성/비 활성 처리 ==============*/
+.button-group-right #cancelBtn {
+  background-color: #f0f0f0; 
+  color: #333; 
+  border: 1px solid #ccc; 
+  cursor: not-allowed; 
+  padding: 10px 20px;
+}
+
+.button-group-right #cancelBtn:disabled {
+  cursor: not-allowed; /* Disable cursor on disabled button */
+  opacity: 0.5; /* Disable opacity when disabled */
+}
+
+.button-group-right #cancelBtn.active {
+  background-color: var(--text-gray-dark); /* Green background when active */
+  color: white; /* White text when active */
+  cursor: pointer; /* Normal cursor when active */
+}
+
+.button-group-right #cancelBtn.active:hover {
+  background-color: var(--text-point); /* Darker green on hover */
+}
+

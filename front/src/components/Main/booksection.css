@@ -1,0 +1,33 @@
+.book-section {
+  margin: 0 180px;
+}
+
+.new {
+  margin-top: 180px;
+}
+
+.best {
+  margin-top: 120px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: var(--font-large3);
+  font-weight: var(--font-semibold-weight);
+}
+
+.section-title p {
+  font-size: var(--font-normal1);
+  font-weight: var(--font-regular-weight);
+  color: var(--text-gray-dark);
+}
+
+.book-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

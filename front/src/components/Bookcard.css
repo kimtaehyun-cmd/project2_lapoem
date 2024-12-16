@@ -1,0 +1,56 @@
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.book-thumbnail img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--text-gray-light);
+  border-radius: 8px;
+}
+
+.book-thumbnail {
+  aspect-ratio: 3 / 4; /* 3:4 비율 설정 */
+  overflow: hidden;
+}
+
+.book-info {
+  color: var(--text-black);
+  gap: 6px;
+}
+
+.book-title {
+  font-size: var(--font-normal1);
+  font-weight: var(--font-bold-weight);
+}
+
+.book-writer {
+  display: flex;
+  font-size: var(--font-smallest);
+  color: var(--text-gray-dark);
+}
+
+.book-star {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.heart_rating {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-top: 2px;
+}
+
+.average_star {
+  color: var(--text-red);
+}
+.comment_total_people {
+  color: var(--text-gray-dark);
+}

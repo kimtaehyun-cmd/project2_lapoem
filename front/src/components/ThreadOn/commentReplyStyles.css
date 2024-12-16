@@ -1,0 +1,154 @@
+.thread-comment-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #999;
+  max-width: 1560px;
+  padding: 20px 0;
+}
+
+/* 댓글 데이터 불러오는 부분 css */
+.thread-comment-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 0 80px;
+}
+
+.thread-comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thread-comment-header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.thread-comment-nickname {
+  font-size: var(--font-normal1);
+  font-weight: var(--font-bold-weight);
+  color: var(--text-black);
+}
+
+.thread-comment-date {
+  font-size: var(--font-smallest);
+  font-weight: var(--font-regular-weight);
+  color: var(--text-gray-medium);
+}
+
+.thread-delete-button {
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.thread-delete-button > img {
+  width: 12px;
+  height: 12px;
+}
+
+.thread-comment-content {
+  font-size: var(--font-small);
+  font-weight: var(--font-regular-weight);
+  color: var(--text-black);
+}
+
+/* 대댓글 작성 버튼 */
+.post-reply {
+  margin-top: 14px;
+  /* margin-bottom: 20px; */
+  padding: 0 80px;
+}
+
+.reply-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reply-button > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* 대댓글 더보기 버튼 */
+.is-reply-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.is-reply-more > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+/* Reply 컴포넌트 css */
+.reply-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+  padding: 0 92px;
+  /* max-width: 1560px; */
+}
+
+.reply-line {
+  width: 4px;
+  height: 30px;
+  background-color: var(--text-gray-light);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.reply-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.reply-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reply-header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.reply-nickname {
+  font-size: var(--font-small);
+  font-weight: var(--font-bold-weight);
+  color: var(--text-black);
+}
+
+.reply-date {
+  font-size: var(--font-smallest);
+  font-weight: var(--font-regular-weight);
+  color: var(--text-gray-medium);
+}
+
+.reply-delete-button {
+  border: none;
+  cursor: pointer;
+}
+
+.reply-delete-button > img {
+  width: 12px;
+  height: 12px;
+}
+
+.reply-text {
+  font-size: var(--font-smallest);
+  font-weight: var(--font-regular-weight);
+  color: var(--text-black);
+}

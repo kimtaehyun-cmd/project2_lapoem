@@ -1,0 +1,131 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  gap: 20px;
+}
+
+/* 공통 스타일 - 검색바 전체를 통일된 UI로 스타일링 */
+/* 전체 글자 스타일 */
+.category-filter select option {
+  font-weight: bold;
+  color: #333;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #777777;
+  border-radius: 30px;
+  padding: 15px 15px;
+  width: 500px;
+  background-color: #f9f9f9;
+  margin-left: 10px;
+}
+
+/* CategoryFilter 스타일 */
+.category-filter {
+  width: 200px;
+  position: relative;
+  /* display: inline-block; */
+  border: 1px solid #777777;
+  border-radius: 30px;
+  padding: 5px 15px;
+  background-color: #f9f9f9;
+}
+
+/* select 스타일 */
+.category-filter select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+  color: #333;
+  cursor: pointer;
+  appearance: none;
+  /* 기본 드롭다운 화살표 숨김 */
+  padding: 5px;
+    /* 위아래 여백을 줘서 텍스트가 가운데에 위치하도록 함 */
+  line-height: 2;
+  /* 선택 사항: line-height로 세로 가운데 정렬 조정 */
+
+}
+
+/* 드롭다운 화살표 아이콘 */
+.category-filter::after {
+  content: '▼';
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+  color: #333;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 전체 글자 스타일 */
+.category-filter select option {
+  font-weight: bold;
+  color: #333;
+}
+
+/* 검색 인풋 */
+.searchbar input[type='text'] {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+  color: #333;
+  padding-left: 10px;
+}
+
+.searchbar input[type='text']::placeholder {
+  color: #bbb;
+}
+
+/* 구분선 스타일 */
+.divider {
+  width: 1px;
+  height: 24px;
+  /* 구분선의 높이를 조정하여 검색바 내부에 맞춤 */
+  border-left: 1px solid #777777; /* 구분선을 border로 표시 */
+  margin: 0 10px;
+  /* 구분선과 양쪽 요소에 간격을 줌 */
+}
+
+/* 검색 버튼 */
+.searchbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.searchbar button::before {
+
+  font-size: 18px;
+  color: #333;
+}
+
+/* 구분선 스타일 */
+.searchbar .divider {
+  width: 1px;
+  height: 24px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+.search_icon{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+

@@ -1,0 +1,25 @@
+/* 헤더 스타일 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 250px; /* 사이드 네비게이션 너비만큼 오른쪽으로 이동 */
+  width: calc(100% - 250px);
+  height: 60px;
+  background-color: #4A628A;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-family: var(--font-en);
+}
+
+/* 컨텐츠 영역 스타일 */
+.content-area {
+  margin-left: 250px; /* 사이드 네비게이션 너비 */
+  margin-top: 60px; /* 헤더 높이 */
+  padding: 20px;
+  background-color: #eaeaea;
+  min-height: calc(100vh - 60px); /* 전체 높이에서 헤더 높이를 뺀 값 */
+  box-sizing: border-box;
+}

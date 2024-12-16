@@ -1,0 +1,224 @@
+.new-forum-container {
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 120px 0 0 0;
+}
+
+.new-forum-container h2 {
+  width: 245px; /* 너비 설정 */
+  height: 60px; /* 높이 설정 */
+  font-size: 38px; /* 폰트 크기 (박스를 가득 채우도록 크게 설정) */
+  font-weight: bold;
+  line-height: 60px; /* 높이와 동일하게 설정하여 세로 중앙 정렬 */
+  text-align: center; /* 텍스트 가로 중앙 정렬 */
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  margin: 0; /* 불필요한 여백 제거 */
+  padding: 0; /* 불필요한 패딩 제거 */
+  box-sizing: border-box; /* 패딩과 테두리를 크기에 포함시킴 */
+  margin-bottom: 80px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.title-group {
+  position: relative;
+  border-top: 2px solid #777777;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px 0;
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.input-label {
+  color: #222222;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 16px;
+  padding-left: 40px;
+  padding-right: 16px;
+  flex-shrink: 0;
+  min-width: 50px;
+}
+
+.title-input-wrapper {
+  flex-grow: 1;
+  border: 1px solid #999999;
+  border-radius: 16px; /* 테두리 둥글게 (기존 4px -> 16px로 변경) */
+  margin-right: 20px;
+  width: 1346px;
+  height: 60px;
+  overflow: hidden; /* input이 둥근 테두리를 벗어나지 않도록 설정 */
+  box-sizing: border-box; /* 패딩과 테두리 포함한 크기 설정 */
+  display: flex; /* 입력 필드와 토글 버튼을 한 줄에 배치 */
+  align-items: center;
+}
+
+.title-input-wrapper input {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 27px;
+  outline: none;
+  border: none;
+  color: #222222;
+  box-sizing: border-box;
+  border-radius: 16px; /* input에도 동일한 둥근 테두리 적용 */
+}
+
+.title-input-wrapper input::placeholder {
+  color: #777777;
+}
+
+.content-group {
+  margin-top: 30px;
+}
+
+.content-label {
+  width: 1560px;
+  height: 60px;
+  background-color: #eeeeee;
+  border: 1px solid #999999;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #222222;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 16px 16px 0 0;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 500px;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 27px;
+  border: 1px solid #999999;
+  border-radius: 0 0 16px 16px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group textarea::placeholder {
+  color: #777777;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.delete-button,
+.submit-button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: white;
+  color: #999999;
+  border: 1px solid #999999;
+}
+
+.submit-button {
+  background-color: #4b433b;
+  color: white;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #222;
+}
+
+.delete-button:hover {
+  background-color: #f5f5f5;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+}
+
+.content-label,
+.form-group textarea {
+  width: 100%;
+  max-width: 1560px;
+  box-sizing: border-box;
+}
+
+.toggle-button {
+  position: relative;
+  width: 60px; /* 토글 버튼의 너비를 더 넓게 설정 */
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: background-color 0.3s;
+  justify-content: space-between; /* 양쪽 끝에 아이콘을 배치 */
+  margin-right: 18px;
+}
+
+.toggle-icon {
+  width: 24px; /* 아이콘 크기 */
+  height: 24px;
+  display: block; /* 아이콘이 제대로 표시되도록 설정 */
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 2px;
+  left: 2px; /* 기본 위치를 왼쪽으로 설정 */
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+.toggle-button.public .toggle-circle {
+  transform: translateX(0); /* Public 상태에서는 왼쪽에 위치 */
+}
+
+.toggle-button.private .toggle-circle {
+  transform: translateX(36px); /* Private 상태에서는 오른쪽에 위치 */
+}
+
+.toggle-button img {
+  width: 17px;
+  height: 17px;
+  transition: opacity 0.1s;
+}
+
+.toggle-button.public img:first-child {
+  /* Public 상태에서 좌측 아이콘 (private) 숨김 */
+  opacity: 0;
+}
+
+.toggle-button.public img:last-child {
+  /* Public 상태에서 우측 아이콘 (public) 표시 */
+  opacity: 1;
+}
+
+.toggle-button.private img:first-child {
+  /* Private 상태에서 좌측 아이콘 (private) 표시 */
+  opacity: 1;
+}
+
+.toggle-button.private img:last-child {
+  /* Private 상태에서 우측 아이콘 (public) 숨김 */
+  opacity: 0;
+}

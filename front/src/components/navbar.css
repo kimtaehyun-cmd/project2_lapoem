@@ -1,0 +1,86 @@
+nav {
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 180px;
+  background-color: #4b433b;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-list {
+  padding-top: 10px;
+  display: flex;
+  color: #fff;
+  gap: 60px;
+  font-size: var(--font-small);
+  font-weight: var(--font-medium-weight);
+}
+
+.nav-item {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item.active {
+  opacity: 1;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 50px; /* 아이콘 아래에 위치시키기 */
+  right: 0;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.profile-menu a,
+.profile-menu button {
+  display: block;
+  width: 100%;
+  padding: 6px 16px;
+  text-align: left;
+  color: var(--text-black);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 1600px) {
+  nav {
+    height: 80px;
+  }
+}

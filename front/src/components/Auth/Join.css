@@ -1,0 +1,127 @@
+.join_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.join_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.input_group {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.gender_group {
+  flex: 0.5;
+}
+
+.join_input {
+  width: 100%;
+  max-width: 500px;
+  /* 입력 필드 크기 제한 */
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.join_input:focus {
+  border-color: #333;
+}
+
+.gender_select_group {
+  display: flex;
+  gap: 0;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+}
+
+.gender_button {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.gender_button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.join_button {
+  width: 50%;
+  /* 버튼 크기 제한 */
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #4c4039;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.join_button:hover {
+  background-color: #333;
+}
+
+.error_message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* 이메일 입력 필드와 체크박스 정렬 */
+.email_input_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.email_input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+  max-width: 500px;
+  /* 연락처 입력창과 동일한 최대 너비 */
+}
+
+.checkbox_label {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}

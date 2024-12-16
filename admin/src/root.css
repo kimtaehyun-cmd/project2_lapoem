@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* 기본 텍스트 컬러 */
+  --text-black: #222222;
+  --text-gray-dark: #777777;
+  --text-gray-medium: #999999;
+  --text-gray-light: #cccccc;
+  --text-gray-bg: #ececec;
+
+  /* 포인트 컬러 */
+  --text-point: #4b433b;
+  --text-red: #e83030;
+
+  /* 폰트 설정 */
+  --font-kr: "Noto Sans KR", sans-serif;
+  --font-en: "Poppins", sans-serif;
+
+  /* 폰트 사이즈 */
+  --font-large3: 42px;
+  --font-large2: 36px;
+  --font-large1: 32px;
+  --font-normal3: 24px;
+  --font-normal2: 20px;
+  --font-normal1: 18px;
+  --font-small: 16px;
+  --font-smallest: 14px;
+
+  /* 폰트 두께 */
+  --font-regular-weight: 300;
+  --font-medium-weight: 400;
+  --font-semibold-weight: 600;
+  --font-bold-weight: 700;
+}

@@ -1,0 +1,141 @@
+@media (max-width: 1920px) {
+  .thread-card {
+    display: flex;
+    width: 480px;
+    padding: 20px 30px;
+    background-color: var(--text-gray-bg);
+    border: 1px solid var(--text-gray-light);
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .thread-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .thread-thumbnail {
+    width: 160px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .thread-thumbnail img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    aspect-ratio: 3 / 4; /* 3:4 비율 설정 */
+    background-color: var(--text-gray-light);
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .thread-info-wrapper {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    /* flex-grow: 1; */
+    margin-top: 8px;
+    text-align: left;
+  }
+
+  .thread-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 0.2;
+  }
+
+  .thread-tag {
+    background-color: #cccccc2b;
+    border: 1px solid var(--text-gray-medium);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: var(--font-smallest);
+    font-weight: var(--font-medium-weight);
+    color: var(--text-gray-dark);
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .thread-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thread-title {
+    font-size: var(--font-normal2);
+    font-weight: var(--font-bold-weight);
+    color: var(--text-black);
+    margin-bottom: 2px;
+  }
+
+  .thread-writer {
+    display: flex;
+    gap: 4px;
+    font-size: var(--font-small);
+    font-weight: var(--font-regular-weight);
+    color: var(--text-gray-medium);
+  }
+}
+
+@media (max-width: 1800px) {
+  .thread-card {
+    display: flex;
+    width: 440px;
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .thread-card {
+    display: flex;
+    width: 400px;
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .thread-card {
+    display: flex;
+    width: 370px;
+    padding: 18px 24px;
+  }
+
+  .thread-thumbnail {
+    width: 120px;
+  }
+
+  .thread-icon {
+    width: 24px;
+    height: 24px;
+    top: 30px;
+    right: 30px;
+  }
+
+  .thread-tag {
+    padding: 6px 10px;
+    margin-bottom: 14px;
+  }
+
+  .thread-title {
+    font-size: var(--font-small);
+  }
+
+  .thread-writer {
+    font-size: var(--font-smallest);
+  }
+}
+
+@media (max-width: 1500px) {
+  .thread-card {
+    display: flex;
+    width: 360px;
+    padding: 18px 24px;
+  }
+}

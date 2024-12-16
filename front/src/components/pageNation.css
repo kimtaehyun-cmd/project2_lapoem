@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #999999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+}
+
+.pagination button img {
+  width: 16px;
+  height: 16px;
+}
+
+.pagination button.active {
+  background-color: #4b433b; /* 어두운 색으로 현재 페이지 표시 */
+  color: #ececec;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button:not(.active):hover {
+  color: #777777; /* 버튼에 마우스를 올렸을 때 색상 변경 */
+}

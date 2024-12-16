@@ -1,0 +1,180 @@
+/* -------------------책 상세페이지-------------------------- */
+/* 고정 */
+/* Responsive adjustments */
+@media (max-width: 1920px) {
+  .content-wrapper {
+    padding-right: 10px;
+  }
+}
+
+.book-detail-container {
+  min-height: 100vh;
+  padding: 180px 180px 0;
+  /* Space for navbar and footer */
+  /* box-sizing: border-box; */
+}
+
+.booklist-pagetitle {
+  font-size: 38px;
+  line-height: 63px;
+  margin-bottom: 150px;
+  width: 264px;
+  height: 63px;
+  display: block;
+  color: var(--text-black);
+  font-weight: bold;
+}
+
+/* 여기까지 고정 */
+
+/* --------------------------책 정보 영역--------------------------------- */
+
+
+.book-detail-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 40px;
+  color: var(--text-black);
+  position: relative;
+  /* 상대적 위치 지정 */
+}
+
+
+.book-detail-left {
+  display: flex;
+}
+
+
+.book-detail-thumbnail {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px 0% 0% 8px / 8px 8px 8px 8px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* object-fit: cover; */
+}
+
+/* Book Details (Right Section) */
+.book-detail-right {
+  width: 500px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 0% 8px 8px 0% / 8px 8px 8px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.book-detail-labels {
+  margin-left: 15px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.label-best-seller {
+  background-color:#A02334;
+  color: rgb(252, 239, 239);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.label-genre {
+  /* background-color: #696051; */
+  color: var(--text-black);
+  padding: 5px 10px;
+  border: 1px solid var(--text-point);
+  border-radius: 5px;
+}
+
+.book-detail-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 15px;
+}
+
+.book-detail-rating {
+  display: flex;
+  align-items: center;
+  color: #ff5757;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rating-score {
+  display: flex;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.rating-score img{
+ margin-top: 5px;
+ margin-right: 5px;
+}
+
+.review-count {
+  font-size: 14px;
+  color: #777;
+}
+
+.book-detail-info{
+  margin-top: 30px;
+}
+
+.book-detail-right p {
+  margin: 10px 15px;
+}
+
+.book-detail-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  /* 책 제목의 높이에 맞춰 위치 */
+  right: -80px;
+  /* 오른쪽 여백 조정 */
+}
+
+.book-detail-icons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-detail-desc {
+  justify-content: center;
+  width: 100%;
+  margin: 5% auto 5%;
+  padding: 50px;
+  padding-top: 30px;
+}
+
+.book-detal-desc-line{
+  display: flex;
+  justify-content: center;
+  margin: 5% auto 5%;
+  border-top: 1px solid var(--text-gray-light);
+  width: 80%;
+}
+
+.book-detail-desc h3 {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  font-weight: var(--font-bold-weight);
+  color: var(--text-point);
+  font-family: var(--font-en);
+  margin-bottom: 30px;
+}
+
+.book-detail-desc p {
+  line-height: 1.8;
+}
+

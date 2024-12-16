@@ -1,0 +1,98 @@
+/* 전체 대시보드 스타일 */
+.Dashboard_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #151515;
+  color: #fff;
+  z-index: 1;
+  padding: 10px;
+}
+
+/* 로고 이미지 */
+.logo img {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 10px;
+  width: 50%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* 상위 메뉴 스타일 */
+.menu-section {
+  margin-bottom: 10px; /* 각 상위 메뉴 사이에 간격 추가 */
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #777;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-item.open,
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.1); /* 활성화 상태 배경색 */
+  color: #fff;
+}
+
+.menu-item .icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #777;
+  opacity: 0.4;
+}
+
+.menu-item.open .icon,
+.menu-item.active .icon {
+  color: #2d8dff;
+  opacity: 1;
+}
+
+/* 하위 메뉴 컨테이너 스타일 */
+.submenu-container {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* 하위 메뉴 아이템 스타일 */
+.submenu-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  color: #bbb;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.submenu-item.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #2d8dff;
+}
+
+.submenu-item .arrow-icon {
+  margin-right: 8px;
+  color: #2d8dff;
+  font-size: 16px;
+}
+
+.submenu-item:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05); /* 하위 메뉴 호버 효과 */
+}
+
+/* 마지막 하위 메뉴 아이템에서 마진 제거 */
+.submenu-item:last-child {
+  margin-bottom: 0;
+}
